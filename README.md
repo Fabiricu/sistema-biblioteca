@@ -1,9 +1,9 @@
-#Sistema de Gestión de Biblioteca (Microservicios)
+# Sistema de Gestión de Biblioteca (Microservicios)
 
 Este proyecto es un sistema integral para la gestión de una biblioteca, desarrollado bajo una arquitectura de Microservicios utilizando Java 17 y Spring Boot 3.5.9. El sistema permite administrar el inventario de libros, la información de los usuarios y el flujo de préstamos de manera desacoplada y escalable.
 
 
-##🚀 Descripción del Sistema
+## 🚀 Descripción del Sistema
 
 El sistema se compone de tres microservicios principales y una puerta de enlace (API Gateway) que centraliza las comunicaciones:
 
@@ -16,7 +16,7 @@ Microservicio de Usuarios: Administra el registro, perfiles y estados de los soc
 Microservicio de Préstamos: Orquestador de la lógica de negocio para la salida y entrada de libros, vinculando libros con usuarios.
 
 
-###🛠️ Instalación y Configuración
+### 🛠️ Instalación y Configuración
 
 Requisitos Previos
 
@@ -40,7 +40,7 @@ Desde la carpeta raíz del proyecto, compila todos los módulos utilizando Maven
 mvn clean install
 
 
-###🏃 Ejecución de la Aplicación
+### 🏃 Ejecución de la Aplicación
 
 Para que el sistema funcione correctamente, se recomienda seguir este orden de encendido:
 
@@ -57,7 +57,7 @@ API Gateway: Ejecuta el gateway al final.
 cd api-gateway && mvn spring-boot:run (Puerto 8080)
 
 
-###📍 Disponibilidad y Endpoints
+### 📍 Disponibilidad y Endpoints
 
 La aplicación está disponible a través del API Gateway en el puerto 8080. Se han configurado rutas amigables para el consumo externo:
 
@@ -88,7 +88,7 @@ http://localhost:8080/biblioteca/prestamos
 GET, POST, etc.
 
 
-###📊 Componentes Técnicos
+### 📊 Componentes Técnicos
 
 Base de Datos
 
@@ -101,7 +101,7 @@ La documentación interactiva de cada microservicio está disponible en (ajustar
 http://localhost:PORT/swagger-ui.html
 
 
-###📮 Colección de Postman
+### 📮 Colección de Postman
 
 Para facilitar las pruebas, se incluye una colección de Postman con todas las peticiones configuradas para pasar por el Gateway.
 
@@ -116,7 +116,7 @@ Arrastra el archivo JSON mencionado.
 Verás la carpeta con las peticiones listas (Listar libros, Crear usuario, etc.).
 
 
-###📊 Componentes Técnicos
+### 📊 Componentes Técnicos
 
 Base de Datos
 
