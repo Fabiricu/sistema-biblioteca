@@ -29,6 +29,7 @@ IDE (Recomendado: IntelliJ IDEA Community Edition)
 1. Clonar el repositorio
 
 git clone https://github.com/Fabiricu/sistema-biblioteca.git
+
 cd sistema-biblioteca
 
 
