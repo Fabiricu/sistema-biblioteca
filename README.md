@@ -28,8 +28,8 @@ IDE (Recomendado: IntelliJ IDEA Community Edition)
 
 1. Clonar el repositorio
 
-git clone [https://github.com/TU_USUARIO/nombre-del-repositorio.git](https://github.com/TU_USUARIO/nombre-del-repositorio.git)
-cd nombre-del-repositorio
+git clone https://github.com/Fabiricu/sistema-biblioteca.git
+cd sistema-biblioteca
 
 
 2. Compilar el proyecto
@@ -60,9 +60,11 @@ cd api-gateway && mvn spring-boot:run (Puerto 8080)
 
 La aplicación está disponible a través del API Gateway en el puerto 8080. Se han configurado rutas amigables para el consumo externo:
 
+
 Funcionalidad
 
 URL Unificada (Gateway)
+
 
 Método
 
@@ -96,6 +98,7 @@ Swagger (Documentación de API)
 La documentación interactiva de cada microservicio está disponible en (ajustar puerto según servicio):
 
 http://localhost:PORT/swagger-ui.html
+
 
 📮 Colección de Postman
 
