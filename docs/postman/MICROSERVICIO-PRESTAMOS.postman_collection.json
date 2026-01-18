@@ -1,0 +1,617 @@
+{
+  "info": {
+    "_postman_id": "f345e34f-059e-44de-b4cd-ba8c417df56b",
+    "name": "MICROSERVICIO-PRESTAMOS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29075905"
+  },
+  "item": [
+    {
+      "name": "Crear un préstamo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"libroId\": 7,\r\n    \"usuarioId\": 13,\r\n    \"fechaDevolucionPrevista\": \"2026-01-22\",\r\n    \"observaciones\": \"Préstamo desde Postman3\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos"
+          ],
+          "query": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test Comunicación Manual",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Home Préstamos",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Todos los Préstamos",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"libroId\": 7,\r\n    \"usuarioId\": 13,\r\n    \"fechaDevolucionPrevista\": \"2026-01-22\",\r\n    \"observaciones\": \"Préstamo desde Postman3\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos"
+          ],
+          "query": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener Préstamo por ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"libroId\": 7,\r\n    \"usuarioId\": 13,\r\n    \"fechaDevolucionPrevista\": \"2026-01-22\",\r\n    \"observaciones\": \"Préstamo desde Postman3\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/66",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "66"
+          ],
+          "query": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Devolver Libro (Marcar como devuelto)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/7/devolucion",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "7",
+            "devolucion"
+          ],
+          "query": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Préstamos por Usuario",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/usuario/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "usuario",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Préstamos por Libro",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/libro/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "libro",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/71",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "71"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Verifica que el préstamo 71 existe",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/71",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "71"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtén un préstamo ACTIVO para devolver:",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Health check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/actuator/health",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "actuator",
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Para préstamos ACTIVOS",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Verifica TODOS los préstamos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "devolución con uno de estos préstamos ACTIVOS ID 65",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Endpoint original con body mínimo",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "OBTENER PRÉSTAMOS POR USUARIO",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/usuario/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "usuario",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "OBTENER PRÉSTAMOS POR LIBRO",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/libro/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "libro",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "OBTENER PRÉSTAMOS VENCIDOS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/vencidos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "vencidos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "VERIFICAR USUARIO CON PRÉSTAMOS ACTIVOS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/usuario/4/activos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "usuario",
+            "4",
+            "activos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "VERIFICAR LIBRO PRESTADO",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/libro/5/prestado",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "libro",
+            "5",
+            "prestado"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CONTAR PRÉSTAMOS ACTIVOS DE USUARIO",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/usuario/4/contar-activos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "usuario",
+            "4",
+            "contar-activos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ESTADÍSTICAS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/estadisticas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "estadisticas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TEST COMUNICACIÓN (OCULTO)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/test-comunicacion",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "test-comunicacion"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "REGISTRAR DEVOLUCIÓN",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"observaciones\": \"Libro devuelto en buen estado\",\r\n  \"libroPerdido\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/66/devolucion",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "66",
+            "devolucion"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "OBTENER PRESTAMOS ACTIVOS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8083/api/prestamos/activos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8083",
+          "path": [
+            "api",
+            "prestamos",
+            "activos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PRUEBAS PRESTAMOS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/biblioteca/prestamos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "biblioteca",
+            "prestamos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
