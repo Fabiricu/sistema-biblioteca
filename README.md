@@ -107,7 +107,9 @@ Para facilitar las pruebas, se incluye una colección de Postman con todas las p
 
 Cómo usarla:
 
-Localiza el archivo en: /docs/postman/biblioteca_collection.json.
+Localizamos el archivo : /docs/postman/MICROSERVICIO-LIBROS.postman_collection.json.
+Localizamos el archivo : /docs/postman/MICROSERVICIO-PRESTAMOS.postman_collection.json.
+Localizamos el archivo : /docs/postman/MICROSERVICIO-USUARIOS.postman_collection.json.
 
 En Postman, haz clic en Import.
 
