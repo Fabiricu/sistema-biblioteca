@@ -108,7 +108,9 @@ Para facilitar las pruebas, se incluye una colección de Postman con todas las p
 Cómo usarla:
 
 Localizamos el archivo : /docs/postman/MICROSERVICIO-LIBROS.postman_collection.json.
+
 Localizamos el archivo : /docs/postman/MICROSERVICIO-PRESTAMOS.postman_collection.json.
+
 Localizamos el archivo : /docs/postman/MICROSERVICIO-USUARIOS.postman_collection.json.
 
 En Postman, haz clic en Import.
@@ -146,4 +148,4 @@ Alta cobertura de tests
 
 Desacoplamiento de componentes
 
-Desarrollado con ❤️ por Fabiana.
+Desarrollado por Fabiana.
